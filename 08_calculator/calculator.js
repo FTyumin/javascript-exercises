@@ -1,17 +1,21 @@
-const add = function() {
-	
+const add = function(x,y) {
+  return x+y;
 };
 
-const subtract = function() {
-	
+const subtract = function(x,y) {
+	return x-y;
 };
 
-const sum = function() {
-	
+const sum = function(array) {
+  result=0;
+	for(let i=0;i<array.length;i++) {
+    result+=array[i];
+  }
+  return result;
 };
 
-const multiply = function() {
-
+const multiply = function(...x) {
+  return x*x;
 };
 
 const power = function() {
