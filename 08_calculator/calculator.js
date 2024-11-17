@@ -14,16 +14,19 @@ const sum = function(array) {
   return result;
 };
 
-const multiply = function(...x) {
-  return x*x;
+const multiply = function(array) {
+  return array.reduce((total, current) => total*current,1);
+}
+
+const power = function(x,y) {
+	return x**y;
 };
 
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
+const factorial = function(n) {
+	if(n==0 || n==1) {return 1;}
+  if(n>1) {
+    return n*factorial(n-1);
+  }
 };
 
 // Do not edit below this line
